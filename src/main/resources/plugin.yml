@@ -1,0 +1,1 @@
+name: "daily-reward"version: 1.0main: "fr.swynn.DailyReward"author: "Swynn"api-version: 1.21commands:  daily:    description: Gives the player their daily reward
