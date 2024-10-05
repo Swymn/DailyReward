@@ -78,6 +78,14 @@ public class Reward {
         this.percentage = percentage;
     }
 
+    public boolean isDefaultReward() {
+        return defaultReward;
+    }
+
+    public void setDefaultReward(boolean defaultReward) {
+        this.defaultReward = defaultReward;
+    }
+
     public ItemStack toItemStack() {
         var itemStack = new ItemStack(material, amount);
         var itemMeta = itemStack.getItemMeta();
@@ -91,13 +99,5 @@ public class Reward {
             itemStack.setItemMeta(itemMeta);
         }
         return itemStack;
-    }
-
-    public boolean isDefaultReward() {
-        return defaultReward;
-    }
-
-    public void setDefaultReward(boolean defaultReward) {
-        this.defaultReward = defaultReward;
     }
 }

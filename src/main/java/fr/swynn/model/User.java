@@ -41,14 +41,13 @@ public class User {
     }
 
     public boolean hasClaimedDailyReward() {
-        return false;
-        /*if (lastClaimedDate == null) {
+        if (lastClaimedDate == null) {
             return false;
         }
         var now = java.time.LocalDate.now();
         var lastClaimed = lastClaimedDate.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
         return lastClaimed.getYear() == now.getYear() &&
                 lastClaimed.getMonthValue() == now.getMonthValue() &&
-                lastClaimed.getDayOfMonth() == now.getDayOfMonth();*/
+                lastClaimed.getDayOfMonth() == now.getDayOfMonth();
     }
 }
